@@ -3,17 +3,18 @@ import Image from "next/image";
 
 export default function LoginPage() {
   return(
-    <main className="flex flex-col items-center p-5 gap-10 animate-fade-in ">
-      <Image
-        src='/assets/logo.svg'
-        width={100}
-        height={100}
-        alt="Logo"
-      />
-
-      <div className="mt-3">
-        <SignIn/>
+    <main className="flex flex-col justify-center items-center p-5 gap-10 animate-fade-in h-dvh">
+      <div className="flex flex-col items-center">
+        <h2 className="text-5xl mb-2">Calendar</h2>
+        <Image
+          src='/assets/logo.svg'
+          width={150}
+          height={150}
+          alt="Logo"
+        />
       </div>
+
+      <SignIn/>
     </main>
   )
 }
